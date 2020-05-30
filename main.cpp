@@ -255,6 +255,12 @@ int main(int argc, char** argv) {
 			}
 			case 7:{//salir
 				seguir = 0;
+				for(int i = 0; i < empleados.size(); i++){
+					delete empleados[i];
+				}
+				for(int i = 0; i < backlog.size(); i++){
+					delete backlog[i];
+				}
 				break;
 			}
 		}//fin del switch
